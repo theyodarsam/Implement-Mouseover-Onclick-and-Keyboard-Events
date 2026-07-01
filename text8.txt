@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events Handling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2 id="heading" onmouseover="changeColor()">
+            Move Mouse Over Me
+        </h2>
+
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+
+        <br><br>
+
+        <input type="text"
+               id="textbox"
+               placeholder="Type Something"
+               onkeyup="displayText()">
+
+        <p id="output"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS Code (style.css)
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container{
+    width: 500px;
+    margin: auto;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input{
+    padding: 8px;
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JavaScript Code (script.js)
+function changeColor(){
+    document.getElementById("heading").style.color = "blue";
+}
+
+function showMessage(){
+    alert("Button Clicked Successfully");
+}
+
+function displayText(){
+    let text =
+    document.getElementById("textbox").value;
+
+    document.getElementById("output").innerHTML =
+    "You Typed: " + text;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
